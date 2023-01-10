@@ -2,9 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ "feature_cicd" ]
-    
-
+    branches: [ "main" ]
   
 jobs:
   build:
