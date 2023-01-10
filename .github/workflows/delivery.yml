@@ -26,6 +26,6 @@ jobs:
           docker stop $(docker ps -aq);docker rm $(docker ps -aq);docker rmi -f $(docker images -aq);
           docker pull sotoarmndo/sotoforest-minecraftserver:salad;
           id=$(docker images -q sotoarmndo/gfrm-react-test);
-          docker run -d -d --expose 25565 -p 25565:25565 "${id}";
+          docker run -d --expose 25565 -p 25565:25565 "${id}";
 
           
