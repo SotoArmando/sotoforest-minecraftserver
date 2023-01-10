@@ -5,10 +5,9 @@ RUN cd /opt/java
 
 RUN apk update && apk upgrade
 RUN apk add openjdk17
-RUN chmod 777 -r /opt/java/app
+RUN chmod 777 -R /opt/java/app
 WORKDIR /opt/java/app
 COPY ./ /opt/java/app
 RUN ls
 EXPOSE 25565
 CMD ["java", "-Xmx1536m", "-jar", "/opt/java/app/fabric-server-launch.jar"]
-
