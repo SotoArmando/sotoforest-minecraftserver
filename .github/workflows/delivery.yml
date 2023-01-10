@@ -19,7 +19,7 @@ jobs:
       uses: appleboy/ssh-action@v0.1.6
       if:  ${{ success() }}
       with:
-        host: ec2-13-59-63-122.us-east-2.compute.amazonaws.co
+        host: ec2-13-59-63-122.us-east-2.compute.amazonaws.com
         username: alpine
         key_path: /home/runner/work/sotoforest-minecraftserver/sotoforest-minecraftserver/.aws/armandowashere.pem
         script: |
