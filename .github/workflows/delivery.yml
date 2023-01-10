@@ -1,0 +1,31 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      
+    - name: Build
+      run: |
+        docker login -u sotoarmndo --password dckr_pat_HCAtJqoSPZ76OqGmh7gb3lcpU3Y
+        docker build . -t sotoarmndo/sotoforest-minecraftserver:salad
+        docker push sotoarmndo/sotoforest-minecraftserver:salad
+    - name: executing remote ssh commands using key_path
+      uses: appleboy/ssh-action@v0.1.6
+      if:  ${{ success() }}
+      with:
+        host: ec2-18-188-58-54.us-east-2.compute.amazonaws.com
+        username: alpine
+        key_path: /home/runner/work/sotoforest-minecraftserver/sotoforest-minecraftserver/.aws/armandowashere.pem
+        script: |
+          docker stop $(docker ps -aq);docker rm $(docker ps -aq);docker rmi -f $(docker images -aq);
+          docker pull sotoarmndo/sotoforest-minecraftserver:salad;
+          id=$(docker images -q sotoarmndo/gfrm-react-test);
+          docker run -d -d --expose 25565 -p 25565:25565 "${id}";
+
+          
