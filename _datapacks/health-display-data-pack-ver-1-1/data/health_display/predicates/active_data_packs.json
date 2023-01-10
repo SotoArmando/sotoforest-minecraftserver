@@ -1,0 +1,12 @@
+{
+	"condition": "minecraft:value_check",
+	"value": {
+		"type": "minecraft:score",
+		"target": {
+			"type": "minecraft:fixed",
+			"name": "Era.of.Magic"
+		},
+		"score": "data.pack.id"
+	},
+	"range": 1
+}

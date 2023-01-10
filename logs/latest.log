@@ -1,0 +1,119 @@
+[21:15:36] [main/INFO]: Loading Minecraft 1.19.3 with Fabric Loader 0.14.12
+[21:15:36] [ForkJoinPool-1-worker-4/WARN]: Mod letmedespawn uses the version fabric-1.0.2 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'fabric'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[21:15:36] [main/INFO]: Loading 49 mods:
+	- chunky 1.3.53
+	- chunkyborder 1.1.43
+	- fabric-api 0.72.0+1.19.3
+	- fabric-api-base 0.4.20+afca2f3e85 via fabric-api
+	- fabric-api-lookup-api-v1 1.6.19+49abcf7e85 via fabric-api
+	- fabric-biome-api-v1 12.1.0+b5d379b085 via fabric-api
+	- fabric-block-api-v1 1.0.4+e022e5d185 via fabric-api
+	- fabric-command-api-v1 1.2.21+f71b366f85 via fabric-api
+	- fabric-command-api-v2 2.2.0+3fc4752e85 via fabric-api
+	- fabric-commands-v0 0.2.38+df3654b385 via fabric-api
+	- fabric-containers-v0 0.1.46+df3654b385 via fabric-api
+	- fabric-content-registries-v0 3.5.0+1d37d50285 via fabric-api
+	- fabric-convention-tags-v1 1.2.1+8e4e694f85 via fabric-api
+	- fabric-crash-report-info-v1 0.2.13+aeb40ebe85 via fabric-api
+	- fabric-data-generation-api-v1 11.1.4+1134c5b885 via fabric-api
+	- fabric-dimensions-v1 2.1.40+48349a3f85 via fabric-api
+	- fabric-entity-events-v1 1.5.6+b83334a085 via fabric-api
+	- fabric-events-interaction-v0 0.4.39+3baeb27a85 via fabric-api
+	- fabric-events-lifecycle-v0 0.2.42+df3654b385 via fabric-api
+	- fabric-game-rule-api-v1 1.0.29+99f9db8085 via fabric-api
+	- fabric-item-api-v1 2.1.8+1134c5b885 via fabric-api
+	- fabric-item-group-api-v1 2.1.11+1134c5b885 via fabric-api
+	- fabric-lifecycle-events-v1 2.2.9+23a79c8a85 via fabric-api
+	- fabric-loot-api-v2 1.1.19+75e9821185 via fabric-api
+	- fabric-loot-tables-v1 1.1.23+9e7660c685 via fabric-api
+	- fabric-message-api-v1 5.0.13+6ede1da985 via fabric-api
+	- fabric-mining-level-api-v1 2.1.30+49abcf7e85 via fabric-api
+	- fabric-networking-api-v1 1.2.16+4017a8cb85 via fabric-api
+	- fabric-networking-v0 0.3.33+df3654b385 via fabric-api
+	- fabric-object-builder-api-v1 5.3.0+85f102ee85 via fabric-api
+	- fabric-particles-v1 1.0.19+f1e4495b85 via fabric-api
+	- fabric-recipe-api-v1 1.0.0+5176f73d85 via fabric-api
+	- fabric-registry-sync-v0 2.0.4+1134c5b885 via fabric-api
+	- fabric-rendering-data-attachment-v1 0.3.24+afca2f3e85 via fabric-api
+	- fabric-rendering-fluids-v1 3.0.17+f1e4495b85 via fabric-api
+	- fabric-resource-conditions-api-v1 2.2.2+1134c5b885 via fabric-api
+	- fabric-resource-loader-v0 0.10.4+a91e48b785 via fabric-api
+	- fabric-screen-handler-api-v1 1.3.12+99f9db8085 via fabric-api
+	- fabric-transfer-api-v1 2.1.14+ccd377ba85 via fabric-api
+	- fabric-transitive-access-wideners-v1 2.3.0+5b9a588b85 via fabric-api
+	- fabricloader 0.14.12
+	- java 19
+	- letmedespawn fabric-1.0.2
+	- memoryleakfix 1.19.3-0.7.0
+	- minecraft 1.19.3
+	- raknetify 0.1.0+alpha.5.33
+	- sleepwarp 1.2.0+1.19
+	- smoothboot 1.19-1.7.1
+	- starlight 1.1.1+fabric.ae22326
+[21:15:36] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/var/home/soul/Downloads/minecraftfabricserver/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[21:15:36] [main/INFO]: Compatibility level set to JAVA_17
+[21:15:37] [main/WARN]: Error loading class: org/quiltmc/qsl/networking/impl/server/ServerLoginNetworkAddon (java.lang.ClassNotFoundException: org/quiltmc/qsl/networking/impl/server/ServerLoginNetworkAddon)
+[21:15:37] [main/INFO]: Smooth Boot config initialized
+[21:15:42] [main/INFO]: Building unoptimized datafixer
+[21:15:44] [main/WARN]: @Redirect conflict. Skipping raknetify-fabric.mixins.json:server.MixinServerLoginNetworkHandler from mod raknetify->@Redirect::stopCompressionIfStreamingCompressionExists(Lnet/minecraft/server/MinecraftServer;)I with priority 900, already redirected by fabric-networking-api-v1.mixins.json:ServerLoginNetworkHandlerMixin from mod fabric-networking-api-v1->@Redirect::removeLateCompressionPacketSending(Lnet/minecraft/server/MinecraftServer;)I with priority 1000
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2635 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_7519 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_7494 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_7618 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_7496 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2755 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2762 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2610 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2612 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2698 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2809 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2644 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2730 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_2660 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Warning: net.minecraft.class_5747 not found for raknet multi-channel
+[21:15:44] [main/INFO]: [STDOUT]: Raknetify: Using leak detector level SIMPLE
+[21:15:44] [main/INFO]: Config 'sleepwarp' is missing, generating default one...
+[21:15:44] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:15:46] [main/INFO]: Loaded 7 recipes
+[21:15:46] [main/INFO]: Loaded 1179 advancements
+[21:15:46] [main/INFO]: Applied 0 biome modifications to 0 of 63 new biomes in 1.825 ms
+[21:15:46] [Server thread/INFO]: Starting minecraft server version 1.19.3
+[21:15:46] [Server thread/INFO]: Loading properties
+[21:15:46] [Server thread/INFO]: Default game type: SURVIVAL
+[21:15:46] [Server thread/INFO]: Generating keypair
+[21:15:46] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:15:46] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /192.168.0.131
+[21:15:47] [Server thread/INFO]: Using epoll channel type
+[21:15:47] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /0:0:0:0:0:0:0:1%lo
+[21:15:47] [Server thread/INFO]: Using epoll channel type
+[21:15:47] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /127.0.0.1
+[21:15:47] [Server thread/INFO]: Using epoll channel type
+[21:15:47] [Server thread/INFO]: Using epoll channel type
+[21:15:47] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:15:47] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:15:47] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:15:47] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:15:47] [Server thread/INFO]: Preparing level "world"
+[21:15:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:15:51] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[21:15:51] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[21:15:51] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[21:15:51] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[21:15:51] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[21:15:51] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[21:15:51] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[21:15:52] [Worker-Main-11/INFO]: Preparing spawn area: 1%
+[21:15:52] [Worker-Main-4/INFO]: Preparing spawn area: 29%
+[21:15:53] [Worker-Main-4/INFO]: Preparing spawn area: 89%
+[21:15:53] [Server thread/INFO]: Time elapsed: 4602 ms
+[21:15:53] [Server thread/INFO]: [MemoryLeakFix] Attempting to ForceLoad All Mixins and clear cache
+[21:15:53] [Server thread/INFO]: [MemoryLeakFix] Done ForceLoad and clearing SpongePowered cache
+[21:15:53] [Server thread/INFO]: Done (6.283s)! For help, type "help"
+[21:23:17] [Server thread/INFO]: Expert800[/127.0.0.1:45560] logged in with entity id 265 at (-1560.5431074423263, 68.0, -268.06431815527316)
+[21:23:17] [Server thread/INFO]: Expert800 joined the game
+[21:27:40] [Server thread/INFO]: Expert800 lost connection: Disconnected
+[21:27:40] [Server thread/INFO]: Expert800 left the game
+[21:30:40] [Server thread/INFO]: Expert800[/127.0.0.1:38940] logged in with entity id 2404 at (-1600.6523610890072, 74.0, -254.9154161249119)
+[21:30:40] [Server thread/INFO]: Expert800 joined the game
+[21:38:34] [Server thread/INFO]: Expert800 lost connection: Disconnected
+[21:38:34] [Server thread/INFO]: Expert800 left the game

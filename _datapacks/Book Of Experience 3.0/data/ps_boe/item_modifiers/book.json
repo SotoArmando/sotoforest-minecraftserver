@@ -1,0 +1,35 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "ps:temp"
+    },
+    "ops": [
+      {
+        "source": "ps_boe.ps_boe",
+        "target": "ps_boe",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "nbt": "ps_boe.ps_boe",
+          "storage": "ps:temp",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": " Experience Stored",
+          "color": "dark_gray"
+        }
+      ]
+    ],
+    "replace": true
+  }
+]

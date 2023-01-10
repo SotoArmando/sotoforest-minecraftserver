@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:wolf",
+        "minecraft:pig",
+        "minecraft:squid",
+        "minecraft:glow_squid",
+        "minecraft:spider",
+        "minecraft:goat",
+        "minecraft:guardian",
+        "minecraft:shulker"
+    ]
+}
