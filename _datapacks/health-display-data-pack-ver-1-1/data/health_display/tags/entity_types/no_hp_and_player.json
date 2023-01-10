@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:player",
-    "#health_display:no_hp"
-  ]
-}

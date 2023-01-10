@@ -1,0 +1,17 @@
+[11:02:54] [INFO] [FabricLoader/GameProvider]: Loading Minecraft 1.19.2 with Fabric Loader 0.14.12
+[11:02:54] [INFO] [FabricLoader/GameRemap]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[11:02:55] [ERROR] [FabricLoader/]: Uncaught exception in thread "main"
+java.lang.RuntimeException: An exception occurred when launching the server!
+	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:71)
+Caused by: java.lang.RuntimeException: Unfixable conflicts
+	at net.fabricmc.tinyremapper.TinyRemapper.handleConflicts(TinyRemapper.java:867)
+	at net.fabricmc.tinyremapper.TinyRemapper.propagate(TinyRemapper.java:767)
+	at net.fabricmc.tinyremapper.TinyRemapper.mrjRefresh(TinyRemapper.java:1046)
+	at net.fabricmc.tinyremapper.TinyRemapper.apply(TinyRemapper.java:898)
+	at net.fabricmc.loader.impl.game.GameProviderHelper.deobfuscate0(GameProviderHelper.java:304)
+	at net.fabricmc.loader.impl.game.GameProviderHelper.deobfuscate(GameProviderHelper.java:238)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.initialize(MinecraftGameProvider.java:313)
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:142)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:69)
