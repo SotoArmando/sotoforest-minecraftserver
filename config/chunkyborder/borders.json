@@ -5,6 +5,7 @@
     "centerZ": 0.0,
     "radiusX": 2000.0,
     "radiusZ": 1000.0,
-    "shape": "rectangle"
+    "shape": "rectangle",
+    "wrap": "none"
   }
 }
