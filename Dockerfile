@@ -11,4 +11,3 @@ COPY ./ /opt/java/app
 RUN ls
 EXPOSE 25565
 CMD ["java", "-Xmx1536m", "-jar", "/opt/java/app/fabric-server-launch.jar"]
-
