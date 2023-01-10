@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "c74585e3-28d2-38f0-ae8a-4aaa8e335ca4",
+    "name": "Expert800",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
