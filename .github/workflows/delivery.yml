@@ -19,13 +19,13 @@ jobs:
       uses: appleboy/ssh-action@v0.1.6
       if:  ${{ success() }}
       with:
-        host: ec2-18-188-58-54.us-east-2.compute.amazonaws.com
+        host: ec2-13-59-63-122.us-east-2.compute.amazonaws.com
         username: alpine
         key_path: /home/runner/work/sotoforest-minecraftserver/sotoforest-minecraftserver/.aws/armandowashere.pem
         script: |
           docker stop $(docker ps -aq);docker rm $(docker ps -aq);docker rmi -f $(docker images -aq);
           docker pull sotoarmndo/sotoforest-minecraftserver:salad;
-          id=$(docker images -q sotoarmndo/gfrm-react-test);
-          docker run -d -d --expose 25565 -p 25565:25565 "${id}";
+          id=$(docker images -q sotoarmndo/sotoforest-minecraftserver:salad);
+          docker run -d --expose 25565 -p 25565:25565 "${id}";
 
           
