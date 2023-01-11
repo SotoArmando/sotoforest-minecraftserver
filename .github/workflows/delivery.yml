@@ -8,6 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
     - name: executing remote ssh commands using key_path
       uses: appleboy/ssh-action@v0.1.6
       if:  ${{ success() }}
