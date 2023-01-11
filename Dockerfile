@@ -1,4 +1,4 @@
-FROM arm32v7/alpine:3.17
+FROM arm64v8/alpine:3.17
 RUN mkdir -p /opt/java
 RUN mkdir -p /opt/java/app
 RUN cd /opt/java
