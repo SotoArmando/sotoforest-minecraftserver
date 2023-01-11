@@ -18,7 +18,7 @@ jobs:
         key_path: /home/runner/work/sotoforest-minecraftserver/sotoforest-minecraftserver/.aws/armandowashere.pem
         script: |
           cd ~
-          git pull https://github.com/sotobosque-apps/sotoforest-minecraftserver;
+          git clone https://github.com/sotobosque-apps/sotoforest-minecraftserver;
           cd sotoforest-minecraftserver;
           docker stop $(docker ps -aq);docker rm $(docker ps -aq);docker rmi -f $(docker images -aq);
           docker build . -t sotoarmndo/sotoforest-minecraftserver:salad;
