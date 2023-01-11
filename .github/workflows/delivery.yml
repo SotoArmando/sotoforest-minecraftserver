@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       
-    - name: Build
+    - uses: uraimo/run-on-arch-action@v2
       with:
         arch: aarch64
         distro: ubuntu_latest
