@@ -9,13 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      
-    - uses: pguyot/arm-runner-action@v2
-      with:
-        commands: |
-          docker login -u sotoarmndo --password dckr_pat_HCAtJqoSPZ76OqGmh7gb3lcpU3Y
-          docker build . -t sotoarmndo/sotoforest-minecraftserver:salad
-          docker push sotoarmndo/sotoforest-minecraftserver:salad
     - name: executing remote ssh commands using key_path
       uses: appleboy/ssh-action@v0.1.6
       if:  ${{ success() }}
@@ -24,8 +17,12 @@ jobs:
         username: ec2-user
         key_path: /home/runner/work/sotoforest-minecraftserver/sotoforest-minecraftserver/.aws/armandowashere.pem
         script: |
+          cd ~
+          git pull https://github.com/sotobosque-apps/sotoforest-minecraftserver;
+          cd sotoforest-minecraftserver;
           docker stop $(docker ps -aq);docker rm $(docker ps -aq);docker rmi -f $(docker images -aq);
-          docker pull sotoarmndo/sotoforest-minecraftserver:salad;
+          docker build . -t sotoarmndo/sotoforest-minecraftserver:salad;
+          docker push sotoarmndo/sotoforest-minecraftserver:salad;
           id=$(docker images -q sotoarmndo/sotoforest-minecraftserver:salad);
           docker run -d --expose 25565 -p 25565:25565 "${id}";
 
