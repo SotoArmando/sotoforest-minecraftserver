@@ -12,12 +12,12 @@ jobs:
       
     - name: Build
       with:
-            arch: aarch64
-            distro: ubuntu_latest
-      run: |
-        docker login -u sotoarmndo --password dckr_pat_HCAtJqoSPZ76OqGmh7gb3lcpU3Y
-        docker build . -t sotoarmndo/sotoforest-minecraftserver:salad
-        docker push sotoarmndo/sotoforest-minecraftserver:salad
+        arch: aarch64
+        distro: ubuntu_latest
+        run: |
+          docker login -u sotoarmndo --password dckr_pat_HCAtJqoSPZ76OqGmh7gb3lcpU3Y
+          docker build . -t sotoarmndo/sotoforest-minecraftserver:salad
+          docker push sotoarmndo/sotoforest-minecraftserver:salad
     - name: executing remote ssh commands using key_path
       uses: appleboy/ssh-action@v0.1.6
       if:  ${{ success() }}
