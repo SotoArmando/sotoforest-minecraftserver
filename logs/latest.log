@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 [02:57:48] [main/INFO]: Loading Minecraft 1.19.2 with Fabric Loader 0.14.12
 [02:57:48] [ForkJoinPool-1-worker-1/WARN]: Mod letmedespawn uses the version fabric-1.0.2 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'fabric'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
 [02:57:48] [main/INFO]: Loading 68 mods:
+=======
+[22:49:42] [main/INFO]: Loading Minecraft 1.19.2 with Fabric Loader 0.14.12
+[22:49:42] [ForkJoinPool-1-worker-2/WARN]: Mod letmedespawn uses the version fabric-1.0.2 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'fabric'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[22:49:42] [ForkJoinPool-1-worker-5/WARN]: Mod gravestones uses the version v1.13 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'v1'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[22:49:43] [main/INFO]: Loading 71 mods:
+>>>>>>> refs/remotes/origin/main
 	- additionaladditions 5.1.0
 	- additionalentityattributes 1.0.0+1.19 via apoli
 	- apoli 2.6.1 via origins
 	- autoconfig1u 3.4.0 via rpgstats
+	- balm-fabric 4.5.2+0
 	- blue_endless_jankson 1.2.1 via jankson
 	- calio 1.7.0 via apoli
 	- cardinal-components-base 5.0.1 via apoli
@@ -53,6 +61,8 @@
 	- fabric-transfer-api-v1 2.1.5+413cbbc790 via fabric-api
 	- fabric-transitive-access-wideners-v1 1.3.3+08b73de490 via fabric-api
 	- fabricloader 0.14.12
+	- gravestones v1.13
+	- hardcorerevival 9.0.1
 	- jankson 4.1.1+j1.2.1 via libgui
 	- java 17
 	- letmedespawn fabric-1.0.2
@@ -69,6 +79,7 @@
 	- server_translations_api 1.4.14+1.19-rc2 via rpgstats
 	- sleepwarp 1.2.0+1.19
 	- smoothboot 1.19-1.7.1
+<<<<<<< HEAD
 [02:57:48] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/opt/java/app/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
 [02:57:48] [main/INFO]: Compatibility level set to JAVA_16
 [02:57:48] [main/INFO]: Compatibility level set to JAVA_17
@@ -2911,3 +2922,86 @@
 [16:56:19] [Server thread/INFO]: [Expert800: Set the time to 1000]
 [16:57:43] [Server thread/INFO]: Expert800 lost connection: Disconnected
 [16:57:43] [Server thread/INFO]: Expert800 left the game
+=======
+[22:49:43] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/var/home/soul/Downloads/minecraftfabricserver/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[22:49:44] [main/INFO]: Compatibility level set to JAVA_16
+[22:49:44] [main/INFO]: Compatibility level set to JAVA_17
+[22:49:50] [main/INFO]: Smooth Boot config initialized
+[22:50:06] [main/INFO]: Building unoptimized datafixer
+[22:50:12] [main/INFO]: apoli.mixins.json:ItemSlotArgumentTypeAccessor from mod apoli->@Accessor[FIELD_GETTER]::getSlotNamesToSlotCommandId()Ljava/util/Map; should be static as its target is
+[22:50:15] [main/INFO]: Apoli 2.6.1 has initialized. Ready to power up your game!
+[22:50:16] [main/INFO]: Origins 1.7.1 is initializing. Have fun!
+[22:50:17] [main/INFO]: [STDOUT]: RPGStats loaded!
+[22:50:17] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[22:50:26] [main/INFO]: Loaded 7 recipes
+[22:50:28] [main/INFO]: Loaded 1219 advancements
+[22:50:28] [main/INFO]: [additionaladditions] Loaded 0 behaviours
+[22:50:28] [main/INFO]: Finished loading powers from data files. Registry contains 76 powers.
+[22:50:28] [main/INFO]: Finished loading origins from data files. Registry contains 11 origins.
+[22:50:28] [main/INFO]: Trying to read layer file: origins:origin
+[22:50:28] [main/INFO]: Finished loading origin layers from data files. Read 1 layers.
+[22:50:28] [main/INFO]: [STDOUT]: RPGStats reload!
+[22:50:28] [ForkJoinPool.commonPool-worker-1/INFO]: Loaded 5444 translation keys
+[22:50:32] [main/INFO]: Applied 0 biome modifications to 0 of 63 new biomes in 15.66 ms
+[22:50:32] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[22:50:32] [Server thread/INFO]: Loading properties
+[22:50:32] [Server thread/INFO]: Default game type: SURVIVAL
+[22:50:32] [Server thread/INFO]: Generating keypair
+[22:50:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[22:50:33] [Server thread/INFO]: Using epoll channel type
+[22:50:33] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:50:33] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:50:33] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:50:33] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:50:33] [Server thread/INFO]: Preparing level "world"
+[22:50:35] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[22:50:48] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[22:50:48] [Worker-Main-9/INFO]: Preparing spawn area: 1%
+[22:50:49] [Worker-Main-9/INFO]: Preparing spawn area: 4%
+[22:50:49] [Worker-Main-10/INFO]: Preparing spawn area: 82%
+[22:50:49] [Server thread/INFO]: Time elapsed: 14246 ms
+[22:50:49] [Server thread/INFO]: [MemoryLeakFix] Attempting to ForceLoad All Mixins and clear cache
+[22:50:50] [Server thread/INFO]: [MemoryLeakFix] Done ForceLoad and clearing SpongePowered cache
+[22:50:50] [Server thread/INFO]: Done (16.169s)! For help, type "help"
+[22:50:56] [Server thread/INFO]: Expert800[/[0:0:0:0:0:0:0:1%0]:43432] logged in with entity id 188 at (-88.5, 73.0, -153.5)
+[22:50:56] [Server thread/INFO]: Expert800 joined the game
+[22:51:58] [Server thread/INFO]: [Expert800: Set own game mode to Creative Mode]
+[22:52:03] [Server thread/INFO]: Expert800 has made the advancement [Sweet Dreams]
+[22:52:14] [Server thread/INFO]: Expert800 fell out of the world
+[22:52:14] [Server thread/INFO]: [STDOUT]: [Gravestones] Gravestone spawned at: -52, 63, -134
+[22:52:14] [Server thread/INFO]: [Expert800: Killed Expert800]
+[22:52:29] [Server thread/INFO]: Expert800 fell out of the world
+[22:52:29] [Server thread/INFO]: [STDOUT]: [Gravestones] Gravestone spawned at: -49, 63, -132
+[22:52:29] [Server thread/INFO]: [Expert800: Killed Expert800]
+[22:53:19] [Server thread/INFO]: [Expert800: Set own game mode to Survival Mode]
+[22:53:45] [Server thread/INFO]: Expert800 was slain by Wolf
+[22:53:52] [Server thread/INFO]: Expert800 was not rescued in time
+[22:53:52] [Server thread/INFO]: [STDOUT]: [Gravestones] Gravestone spawned at: -48, 63, -138
+[22:54:06] [Server thread/INFO]: Expert800 lost connection: Disconnected
+[22:54:06] [Server thread/INFO]: Expert800 left the game
+>>>>>>> refs/remotes/origin/main
