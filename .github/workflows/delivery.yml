@@ -20,6 +20,7 @@ jobs:
           cd ~
           git clone https://github.com/sotobosque-apps/sotoforest-minecraftserver;
           cd sotoforest-minecraftserver;
+          git reset --hard origin/master
           git pull;
           docker stop $(docker ps -aq);docker rm $(docker ps -aq);docker rmi -f $(docker images -aq);
           docker build . -t sotoarmndo/sotoforest-minecraftserver:salad;
